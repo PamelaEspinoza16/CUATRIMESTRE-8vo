@@ -1,0 +1,123 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+  }
+  
+  .timeline-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+  
+  .timeline {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event {
+    flex: 0 0 300px;
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .event:hover {
+    transform: scale(1.1);
+    background-color: #e8f5e9;
+  }
+  
+  .event h2 {
+    color: #4CAF50;
+    font-size: 24px;
+  }
+  
+  .event p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .scroll-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .left-btn {
+    margin-right: 10px;
+  }
+  
+  .right-btn {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .event {
+      flex: 0 0 250px;
+    }
+  }
+  
+/* Contenedor de la imagen flotante */
+#floating-image {
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: auto;
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  /* Estilo para la caja de información adicional */
+#info-box {
+    display: none;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  #info-box h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #info-box p {
+    font-size: 16px;
+    color: #555;
+  }
+  

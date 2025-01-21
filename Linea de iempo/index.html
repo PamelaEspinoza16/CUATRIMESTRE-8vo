@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Línea del Tiempo Interactiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Línea del Tiempo Interactiva de las Aplicaciones Web</h1>
+  </header>
+  <main>
+    <div class="timeline-container">
+      <button class="scroll-btn left-btn">&lt;</button>
+      <section class="timeline">
+        <div class="event" data-year="1990" data-image="images/1990.jpg" data-info="La creación del primer navegador web 'WorldWideWeb', que permitía navegar por la red de información de manera más visual. Fue creado por Tim Berners-Lee en el CERN.">
+          <h2>1990</h2>
+          <p>Creación del primer navegador web: WorldWideWeb.</p>
+        </div>
+        <div class="event" data-year="1993" data-image="images/1993.png" data-info="Mosaic, el primer navegador gráfico que permitió a los usuarios ver texto e imágenes al mismo tiempo, transformó la web en una experiencia visual y multimedia.">
+          <h2>1993</h2>
+          <p>Lanzamiento de Mosaic, el primer navegador gráfico.</p>
+        </div>
+        <div class="event" data-year="1995" data-image="images/1995.png" data-info="JavaScript fue creado por Brendan Eich de Netscape y se convirtió en el lenguaje que permitió interactividad en las páginas web.">
+          <h2>1995</h2>
+          <p>JavaScript es creado por Netscape para navegadores dinámicos.</p>
+        </div>
+        <div class="event" data-year="1999" data-image="images/1999.png" data-info="HTML 4.01 y CSS se estandarizan, permitiendo a los desarrolladores crear sitios web más dinámicos y con mejor diseño.">
+          <h2>1999</h2>
+          <p>Lanzamiento de HTML 4.01 y CSS: se estandariza el diseño web.</p>
+        </div>
+        <div class="event" data-year="2004" data-image="images/2004.png" data-info="La web 2.0 marca un cambio hacia aplicaciones web más interactivas y redes sociales. Este año también marca el auge de plataformas como YouTube y Facebook.">
+          <h2>2004</h2>
+          <p>Comienza la era de Web 2.0: redes sociales y blogs.</p>
+        </div>
+        <div class="event" data-year="2008" data-image="images/2008.png" data-info="Google Chrome se lanza con el objetivo de ser un navegador rápido y ligero. Su motor de renderizado, V8, revolucionó el rendimiento de JavaScript.">
+          <h2>2008</h2>
+          <p>Lanzamiento de Google Chrome, revolucionando la experiencia web.</p>
+        </div>
+        <div class="event" data-year="2010" data-image="images/2010.png" data-info="HTML5 y CSS3 llegaron para mejorar el desarrollo web con características como video nativo, animaciones, y mayor flexibilidad en el diseño.">
+          <h2>2010</h2>
+          <p>HTML5 y CSS3 modernizan el desarrollo web.</p>
+        </div>
+        <div class="event" data-year="Presente" data-image="images/presente.png" data-info="La evolución hacia Progressive Web Apps (PWA) permite a las aplicaciones web funcionar como aplicaciones nativas, mejorando la experiencia del usuario.">
+          <h2>Presente</h2>
+          <p>La web evoluciona hacia Progressive Web Apps (PWA) e inteligencia artificial.</p>
+        </div>
+      </section>
+      <button class="scroll-btn right-btn">&gt;</button>
+    </div>
+    <!-- Contenedor de la imagen flotante -->
+    <div id="floating-image"></div>
+    <!-- Contenedor para la información adicional -->
+    <div id="info-box">
+      <h2>Información adicional</h2>
+      <p id="info-text">Haz clic en un evento para ver más detalles.</p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
